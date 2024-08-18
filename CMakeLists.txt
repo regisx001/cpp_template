@@ -10,9 +10,14 @@ target_include_directories(hello PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # add_library(blah STATIC ${CMAKE_CURRENT_SOURCE_DIR}/lib/Blah.cpp)
 # target_include_directories(hello PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/lib/include)
- add_subdirectory(lib)
 
-target_link_libraries(hello PUBLIC lib)
+
+#  add_subdirectory(lib)
+# target_link_libraries(hello PUBLIC lib)
+
+
+# find_package(CURL  REQUIRED) # Check CMkakeLists.txt to get the name of the library
+# target_link_libraries(hello curl) # The kwargs added to the linker
 
 # find_package(glfw3 3.3 REQUIRED)
 # target_link_libraries(hello glfw)

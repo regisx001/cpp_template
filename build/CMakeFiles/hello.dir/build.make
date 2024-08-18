@@ -92,7 +92,6 @@ hello_EXTERNAL_OBJECTS =
 
 hello: CMakeFiles/hello.dir/src/main.cpp.o
 hello: CMakeFiles/hello.dir/build.make
-hello: lib/liblib.a
 hello: CMakeFiles/hello.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ezzoubair/Desktop/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable hello"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello.dir/link.txt --verbose=$(VERBOSE)
